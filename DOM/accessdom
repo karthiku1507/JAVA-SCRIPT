@@ -1,0 +1,13 @@
+// how to access DOM Element ?
+
+// 1) document.querySelector(id/tag/class)
+
+// 2) document.querySelectorAll(id/tag/class)
+
+// 3) document.getElementById(id)
+
+// 4) document.getElementsByClassName(className)
+
+// 5) document.getElementsByTagName(TagName)
+
+// 6) document.getElementsByName(Name)
