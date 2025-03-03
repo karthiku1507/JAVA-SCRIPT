@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selection Function</title>
+        <script>
+            function geth2Dom(){
+                document.getElementById("title").innerText= "Document object modal";
+                document.getElementById("title").style.color = "red"
+
+               var pDomCollection = document.getElementsByClassName("p1");
+               console.log(pDomCollection[0]);
+               pDomCollection[0].style.color="green"
+
+               var buttonDOMCollection = document.getElementsByTagName("button");
+               buttonDOMCollection[0].style.color = "blue";
+               var pcollection = document.getElementsByName("para1");
+               console.log(pcollection);
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <h2 id="title">DOM</h2>
+        <p name="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nostrum veritatis saepe accusamus ut eius maiores odit fugiat incidunt id!</p>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa, rem nihil expedita nisi consectetur odio asperiores neque sed? Velit qui sed commodi quis impedit voluptates neque nulla numquam beatae?2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam nemo soluta commodi ipsa in officiis quis cum ipsum impedit. Soluta fugit incidunt sunt molestias adipisci esse quas sequi praesentium?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores debitis repellendus eaque nam nulla laborum veniam fugit quia a, vitae animi aspernatur labore soluta quos corporis repudiandae magni quisquam magnam.
+        </p>
+        <button onclick="geth2Dom()">Get h2</button>
+    </body>
+</html>

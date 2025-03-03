@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script src="passwdhide.js"></script> -->
+
+        <script>
+            function showHidePassword() {
+                var inputDomElementArray = document.querySelectorAll("input");
+                var buttonDomElement = document.querySelector("button");
+                // inputDomElement.type = "text";
+                var EmailDomElement = inputDomElementArray[0];
+                EmailDomElement.type = "date";
+                buttonDomElement.innerHTML = "Hide password Now";
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h2>password hide</h2>
+        <input type="password" placeholder="enter password"/>
+        <input type="Email" placeholder="enter Email">
+        <button onclick="showHidePassword()">show password</button>
+    </body>
+</html>
