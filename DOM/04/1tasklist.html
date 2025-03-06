@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function createList(){
+            //create ol :
+            var olDomElement = document.createElement("ol");
+
+            olDomElement.type = "a"
+
+            //craete li
+            var li1 = document.createElement("li");
+            var li2 = document.createElement("li");
+            var li3 = document.createElement("li");
+
+            //add content in the li
+            li1.innerText = "samsung";
+            li2.innerText = "apple";
+            li3.innerText = "oppo";
+
+            //add li inside the ol
+            olDomElement.appendChild(li1);
+            olDomElement.appendChild(li2);
+            olDomElement.appendChild(li3);
+
+            //get body dom element
+            var bodyRef = document.querySelector("body");
+
+            //add ol inside the body
+            bodyRef.appendChild(olDomElement);
+
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Create list</h2>
+    <button onclick="createList()">Create</button>
+</body>
+</html>
