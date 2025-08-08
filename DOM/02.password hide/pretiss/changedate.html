@@ -4,14 +4,14 @@
         <script>
 
         function showHidePassword() {
-            var inputDomElement = document.querySelector("input");
+          
             var inputDomElementArray = document.querySelectorAll("input");
-            var buttonDomElementArray = document.querySelectorAll("button");
+            var buttonDomElementArray = document.querySelector("button");
 
-            inputDomElement.type = "text";
+            // inputDomElement.type = "text";
             var EmailDomElement = inputDomElementArray[1];
             EmailDomElement.type  = "date";
-            buttonDomElementArray[0].innerHTML = "Hide password";
+            buttonDomElement.innerHTML = "Hide password";
         }
 
         </script>
@@ -24,6 +24,6 @@
 
         <input type="password" placeholder="enter password"/>
         <input type="email" placeholder="Enter Email"/>
-        <button onclick="showHidepassword()">show Password</button>
+     <button onclick="showHidePassword()">hide password</button>
     </body>
 </html>
