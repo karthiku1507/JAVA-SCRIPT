@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function createMyDomElement (){
+             var h1DomElement = document.createElement("h1");
+            h1DomElement.innerText = "DOM";
+            var pDomElement = document.createElement("p");
+            pDomElement.innerText = "Document object modal";
+            var divDomElement = document.querySelector("div");
+            divDomElement.appendChild(h1DomElement)
+            divDomElement.appendChild(pDomElement)
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+      <div>
+
+          
+        <h2>get start</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero excepturi hic ut harum, odit consectetur repudiandae tempore? Voluptatibus nobis magnam recusandae aliquam sunt impedit, maxime inventore quia ea. Nulla ipsa error aperiam nesciunt, facilis tenetur officiis deleniti, quod ab architecto ullam maiores mollitia qui quibusdam. Sequi, sunt ipsam quas velit delectus est perferendis voluptatum enim at aperiam tempora dolor molestias! Eos repudiandae dolore dolorum vero aperiam quod nisi dignissimos nesciunt, quisquam libero, earum totam officia error maiores placeat repellat. Animi fugiat voluptatibus fuga qui, provident nobis, cumque, dolorem labore non nemo expedita? Magni consequuntur voluptatibus distinctio at impedit, incidunt in.</p>
+
+        <button onclick="createMyDomElement()">start</button>
+      </div>
+    </body>
+</html>

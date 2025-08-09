@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>remove</title>
+        <script>
+            function createNewDomElement(){
+               var h1DomElement = document.createElement("h1");
+               h1DomElement.innerText = "well come to dom";
+              var pDomElement = document.createElement("p")
+              pDomElement.innerText = "dom is a very very very impotent";
+             var imgDomElement = document.createElement("img");
+             imgDomElement.src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg";
+             imgDomElement.alt="normal text"
+             imgDomElement.width="500"
+             imgDomElement.height="400"
+              var divDomElement = document.querySelector("div");
+            divDomElement.appendChild(h1DomElement)
+            divDomElement.appendChild(pDomElement)
+            divDomElement.appendChild(imgDomElement)
+            }
+
+            function removeImg(){
+               var imgDomElement = document.querySelector("img")
+               var pDomElement = document.querySelectorAll("p")
+               var h1DomElement = document.querySelector("h1")
+
+               imgDomElement.remove();
+               pDomElement[0].remove();
+               h1DomElement.remove();
+            }
+
+        
+        </script>
+    </head>
+    <body>
+        <div>
+        <h2>create new dom element</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, tempore similique! Eos quas minima fuga, architecto sit obcaecati unde velit ducimus, doloribus, amet pariatur! Consequatur rem repellat cupiditate. Porro ad quaerat delectus deserunt, magnam eveniet corrupti fugit non facere enim.</p>
+        <button onclick="createNewDomElement()">create dom</button>
+        
+        <button onclick="removeImg()">remove</button>
+        </div>
+    </body>
+</html>
