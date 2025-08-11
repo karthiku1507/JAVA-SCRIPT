@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            .radioContainer{
+                display: flex;
+                gap: 29px;
+                margin-bottom: 20px;
+            }
+            
+        </style>
+        <script>
+            function createlist(){
+               var olDomElement = document.createElement("ol");
+               olDomElement.type = "a"
+
+               var li1 = document.createElement("li");
+               var li2 = document.createElement("li");
+               var li3 = document.createElement("li");
+
+
+               li1.innerText= "apple";
+               li2.innerText = "sumsung";
+               li3.innerText = "oppo";
+
+               olDomElement.appendChild(li1)
+               olDomElement.appendChild(li2)
+               olDomElement.appendChild(li3)
+
+               var bodyRef = document.querySelector("body")
+
+               bodyRef.appendChild(olDomElement)
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+        <h2>createlist</h2>
+        <div class="radioContainer">
+            <div>
+                <input type="radio" name="types"/>
+                <label> A</label>
+            </div>
+            <div>
+                <input type="radio" name="types" checked/>
+                <label>a</label>
+            </div>
+            <div>
+                <input type="radio" name="types"/>
+                <label>I</label>
+            </div>
+        </div>
+        <button onclick="createlist()">submit</button>
+    </body>
+</html>
